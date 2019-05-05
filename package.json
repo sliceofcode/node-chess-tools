@@ -1,0 +1,43 @@
+{
+  "name": "node-chess-tools",
+  "version": "0.1.0",
+  "description": "Scripts to interact with Chess.com's API",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index",
+    "install": "npx webpack",
+    "test": "echo \"Skipping test for now...\" && exit 0",
+    "chesscom-games": "npx webpack && node dist/chesscom-games"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sliceofcode/node-chess-tools.git"
+  },
+  "keywords": [
+    "chess",
+    "tools",
+    "scripts",
+    "chess.com"
+  ],
+  "author": "Dimitar Tnokovski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sliceofcode/node-chess-tools/issues"
+  },
+  "homepage": "https://github.com/sliceofcode/node-chess-tools#readme",
+  "dependencies": {
+    "jszip": "^3.2.1",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^11.13.5",
+    "@types/request": "^2.48.1",
+    "typescript": "^3.4.5",
+    "ts-loader": "^5.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
